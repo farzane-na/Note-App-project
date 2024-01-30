@@ -1,0 +1,111 @@
+@font-face {
+    font-family: "Cabin_Condensed-Medium";
+    src: url(./font/Cabin_Condensed-Medium.ttf) format("TrueType");
+}
+html{
+    box-sizing: border-box;
+}
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: "Cabin_Condensed-Medium";
+}
+body{
+    font-family: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    margin-top: 7rem;
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.title{
+    font-size: 4rem;
+    font-weight: normal;
+    margin: 0 auto 5rem auto;
+    text-transform: capitalize;
+}
+.input-note{
+    width: 45rem;
+    margin: 0 auto;
+}
+.write-note{
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1.5rem 1rem;
+    border-radius: 0.3rem;
+    font-size: 1.5rem;
+    font-weight: 200;
+    justify-content: center;
+    background-color: #fff;
+}
+.colors-note{
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    margin: 0 2.5rem;
+}
+.color-box{
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    border: 1px solid gray;
+}
+.handle-note{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-right: 2.5rem;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+.add-icon , .delete-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    transition: all 0.2s ease;
+}
+.add-icon{
+    border: 1px solid #4FC3F7;
+}
+.add-icon:hover{
+    box-shadow: 0 1px 10px #039BE5;
+}
+.delete-icon{
+    border: 1px solid #FF5722;
+}
+.delete-icon:hover{
+    box-shadow: 0 1px 10px #E64A19;
+}
+.container-note{
+    width: 100rem;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.note-box{
+    width: 23rem;
+    height: 3.5rem;
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.2 ease;
+    background-color: #fff;
+}
+.note-box:hover{
+    transform: translate(-1px,-1px);
+    box-shadow: 0 1px 8px #B0BEC5;
+}
